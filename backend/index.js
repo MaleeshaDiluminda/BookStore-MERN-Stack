@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/', (request, response) => {
     console.log(request);
-    return response.status(234).send('Welcome Maleesha')
+    return response.status(234).send('Welcome Maleesha Lionel')
 });
 
 console.log('Before mongoose connect');
@@ -14,7 +14,7 @@ console.log('Before mongoose connect');
 mongoose 
    .connect(mongoDBURL)
    .then(() => {
-    console.log('App connected to databse');
+    // console.log('App connected to databse');
     app.listen(PORT, () => {
         console.log(`App is listening to port: ${PORT}`);
     });
@@ -22,4 +22,4 @@ mongoose
    .catch((error) => {
     console.log('Error connecting to database:',error);
    });
-   console.log('After mongoose connect'); 
+//    console.log('After mongoose connect'); 
