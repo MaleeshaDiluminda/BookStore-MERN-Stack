@@ -22,4 +22,4 @@ mongoose
    .catch((error) => {
     console.log('Error connecting to database:',error);
    });
-   console.log('After mongoose connect');
+   console.log('After mongoose connect'); 
