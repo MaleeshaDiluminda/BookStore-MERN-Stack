@@ -24,5 +24,3 @@ mongoose
    .catch((error) => {
     console.log('Error connecting to database:',error);
    });
-
-   // empty commit
